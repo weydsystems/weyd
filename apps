@@ -1,0 +1,4 @@
+<?php
+ header("Access-Control-Allow-Origin: *");
+ $con = mysqli_connect("zeeva.net","zeevanet_apps","","phonegap_demo") or die ("could not connect database");
+?>

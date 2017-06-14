@@ -1,0 +1,304 @@
+a {
+	text-decoration:none !important;
+}
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-color:rgb(236, 240, 241);
+	font-family: open sans;
+	background:#F2F3F4;
+	text-decoration: none;
+	min-height: 100vh;
+	height: 100vh;
+}
+
+#header {
+	width: 100%;
+	line-height: 80px;
+	height: 80px;
+	background-color: #16a085;
+	border-bottom: 3px solid #a94242;
+	position: relative;
+}
+
+.side-btn {
+	color: #fff;
+	font-size: 35px;
+	padding-left: 3%;
+	cursor: pointer;
+}
+
+a.logo {
+	color: #fff;
+	font-family: cursive;
+}
+
+strong.w-msg {
+	font-size: 16px;
+	float: right;
+	cursor: auto;
+	padding-right: 3%;
+	font-family: cursive;
+}
+
+.row {
+	overflow: hidden;
+}
+
+.col-md-3 {
+	padding: 0;
+	margin: 0;
+}
+
+#sidebar {
+	background-color: #16a085;
+	height: inherit;
+}
+
+#side-nav {
+	margin-bottom: -5000px;
+	padding-bottom: 5000px;
+}
+
+#side-nav li {
+	list-style: none;
+}
+
+#side-nav li a {
+	color: #fff;
+	padding: 7%;
+	display: block;
+	font-size: 1.2em;
+	font-family: cursive;
+	border-bottom: .5px solid rgba(0, 0, 0, 0.5);
+}
+
+#side-nav li a:hover {
+	padding-left: 10%;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	font-size: -8em;
+	color: #fff;
+	background-color: #a94242;
+}
+
+.selected {
+	background-color: #a94242;
+	margin: 0;
+	padding: 0;
+}
+
+#icon-box {
+	padding: 10px;
+	margin-bottom: 20px;
+	font-family: cursive;
+	text-align: center;
+	background:#16A085;
+	border-radius:5px;
+}
+
+#icon-box p {
+	color: #fff;
+}
+#cool-fonts {
+	color: #fff;
+	font-size: 60px;
+}
+
+#icon-box:hover {
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.2), 0 6px 15px 0 rgba(0,0,0,.19);
+	background:#a94242;
+	transition: 0.2s;
+	-o-transition:0.2s;
+	-moz-transition:0.2s;
+	-webkit-transition:0.2s;
+	cursor: pointer;
+}
+
+#right-bar {
+	padding: 1%;
+	height: 529px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.caption {
+	text-align: center;
+}
+
+footer {
+	background:#000;
+	max-width: 100%;
+	line-height: 50px;
+	height:50px;
+	text-align: center;
+}
+
+.full_width {
+	width: 100%;
+}
+
+#login-center {
+	display: block;
+	text-align: center;
+	margin-top: 15%;
+}
+
+.l-form {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
+	width: 25%;
+	border-radius: 3px;
+	background-color: rgba(255,255,255,0.3);
+	padding: 15px 15px 15px 15px;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.l-form input[type="text"], input[type="password"] {
+	border-radius: 0;
+	border: 1px thin #000;
+}
+
+.l-form button {
+	border-radius: 0px;
+}
+
+@media screen and (max-width: 999px) {
+	#sidebar {
+		background-color: #16a085;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+	}
+
+	.col-md-3 {
+		width: 100%;
+	}
+
+	.col-md-9 {
+		width: 100%;
+	}
+
+	#side-nav li {
+		list-style: none;
+		display: inline-block;
+		padding: 0 5% 0 5%;
+	}
+
+	#side-nav li a {
+		color: #fff;
+		font-size: 10px;
+		display: inline-block;
+		font-family: cursive;
+		border-bottom: 0;
+		padding: 0 5% 0 5%;
+	}
+
+	#side-nav li a:hover {
+		padding-left: 0;
+		-webkit-transition: 0.2s;
+		-moz-transition: 0.2s;
+		-o-transition: 0.2s;
+		transition: 0.2s;
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0);
+		font-weight: bolder;
+	}
+
+	.selected {
+		font-weight: bolder;
+	}
+
+	#side-nav {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.container-fluid {
+		overflow: auto;
+	}
+
+	#login-center {
+		margin-top: 15%;
+	}
+
+	.l-form {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	#header {
+		max-width: 100%;
+		line-height: 60px;
+		height: 60px;
+		background-color: #16a085;
+		border-bottom: 3px solid #a94242;
+		position: relative;
+	}
+
+	.side-btn {
+		color: #fff;
+		font-size: 20px;
+		padding-left: 3%;
+		cursor: pointer;
+	}
+
+	a.logo {
+		color: #fff;
+		font-family: cursive;
+	}
+
+	strong.w-msg {
+		font-size: 10px;
+		float: right;
+		cursor: auto;
+		padding-right: 3%;
+		font-family: cursive;
+	}
+
+	#side-nav {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.col-md-3 {
+		width: 100%;
+	}
+
+	.col-md-9 {
+		width: 100%;
+	}
+
+	#side-nav li {
+		list-style: none;
+		display: inline-block;
+		padding: 0 2% 0 2%;
+	}
+
+	#side-nav li a {
+		padding: 0 2% 0 2%;
+	}
+
+	.container-fluid {
+		overflow: auto;
+	}
+
+	#login-center {
+		margin-top: 30%;
+		width: 100%;
+	}
+
+	.l-form {
+		width: 90%;
+	}
+}

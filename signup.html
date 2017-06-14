@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta id="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="assets/ico/favicon.png">
+<title>Weyd.NG | SignUp</title>
+
+<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<link href="assets/css/style.css" rel="stylesheet">
+
+<link href="assets/css/owl.carousel.css" rel="stylesheet">
+<link href="assets/css/owl.theme.css" rel="stylesheet">
+    <script src="jquery.min.js"></Script>
+
+<script>
+
+
+
+        paceOptions = {
+            elements: true
+        };
+
+
+
+        $(document).ready(function(){
+        $("#submit").click(function(){
+          var fname = $("#fname").val();
+            var lname = $("#lname").val();
+            var phone = $("#phone").val();
+          var email = $("#email").val();
+            var password= $("#password").val();
+          var dataString ="fname="+fname+"&lname="+lname+"&phone="+phone+"&email="+email+"&password="+password+"&submit=";
+          $.ajax({
+            type:"POST",
+            url:"weyd_apps/signup.php",
+            data:dataString,
+           beforeSend: function(){ $("#submit").val('Signing in...');},
+            success   : function(data) {
+                     if(data=="success"){
+                         alert('registration successful!');
+                          $("#submit").val('submit');
+                     }else if(data=="error"){
+                         alert('registration failed');
+                     }
+                  }
+
+          });
+        });
+
+        });
+
+    </script>
+<script src="assets/js/pace.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+  <div class="header">
+  <nav class="navbar   navbar-site navbar-default" role="navigation">
+    <div class="container">
+    <div class="navbar-header">
+    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+    <a href="index.html" class="navbar-brand logo logo-title" style="color:#159C81;">
+
+    <span class="logo-icon" style="color:#159C81;">
+      <!-- <i class="icon icon-search-1 ln-shadow-logo shape-0"></i>  -->
+  <img src="assets/ico/favicon.ico" style="">
+    </span>
+    WEYD</a></div>
+    <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+    <li><a href="https://instagram.com/weyd_ng"><i class="fa fa-instagram" style="font-size:20px; color:#16A085;"></i></a></li>
+    <li><a href="https://facebook.com/weydng"><i class="fa fa-facebook" style="font-size:20px; color:#16A085;"></i></a></li>
+
+    <li class="postadd">
+      <a class="btn btn-block   btn-border btn-post btn-danger" href="post-ads.html"><i class="fa fa-plus" style="font-size:10px;"></i>SELL AN ITEM</a></li>
+
+  </ul>
+    </div>
+
+    </div>
+
+  </nav>
+  </div>
+
+<div class="main-container">
+<div class="container">
+<div class="row">
+<div class="col-md-8 page-content">
+<div class="inner-box category-content">
+<h2 class="title-2"><i class="icon-user-add"></i> Create your account, Its free </h2>
+<div class="row">
+<div class="col-sm-12">
+<form method="post" action=""class="form-horizontal">
+<fieldset>
+
+<div class="form-group required">
+<label class="col-md-4 control-label">First Name <sup>*</sup></label>
+<div class="col-md-6">
+  <span id="error"><span>
+<input id="fname" placeholder="First Name" class="form-control input-md"  type="text">
+</div>
+</div>
+
+<div class="form-group required">
+<label class="col-md-4 control-label">Last Name <sup>*</sup></label>
+<div class="col-md-6">
+<input id="lname" placeholder="Last Name" class="form-control input-md" type="text">
+</div>
+</div>
+
+<div class="form-group required">
+<label class="col-md-4 control-label">Phone Number <sup>*</sup></label>
+<div class="col-md-6">
+<input id="phone" placeholder="Phone Number" class="form-control input-md" type="text">
+</div>
+</div>
+
+
+<div class="form-group required">
+<label for="inputEmail3" class="col-md-4 control-label">Email
+<sup>*</sup></label>
+<div class="col-md-6">
+<input type="email" id="email"class="form-control" placeholder="E-mail">
+</div>
+</div>
+<div class="form-group required">
+<label for="inputPassword3" class="col-md-4 control-label">Password </label>
+<div class="col-md-6">
+<input type="password" id="password" class="form-control"placeholder="Password">
+<p class="help-block">At least 5 characters
+ </p>
+</div>
+</div>
+<div class="form-group">
+<label class="col-md-4 control-label"></label>
+<div class="col-md-8">
+<div class="termbox mb10">
+
+</div>
+<div style="clear:both"></div>
+<input type="button" id="submit" class="btn btn-primary" value="SignUp"></div>
+</div>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 reg-sidebar">
+<div class="reg-sidebar-inner text-center">
+<div class="promo-text-box"><i class=" icon-picture fa fa-4x icon-color-1"></i>
+<h3><strong>Post a Free Classified</strong></h3>
+<p> Post your free online classified ads on weyd and get connected to real buyers. </p>
+</div>
+<div class="promo-text-box"><i class=" icon-pencil-circled fa fa-4x icon-color-2"></i>
+<h3><strong>Create and Manage Items</strong></h3>
+<p>Managing option ranges from creating of ads to deleting of unwanted ads from being posted.</p>
+</div>
+<div class="promo-text-box"><i class="  icon-heart-2 fa fa-4x icon-color-3"></i>
+<h3><strong>Create your Favorite ads list.</strong></h3>
+<p>What would you like to sell on weyd? sell anything that is best for you, the market is free and open for sellers to interact with buyers</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer" id="footer">
+<div class="container">
+<ul class=" pull-left navbar-link footer-nav">
+<li><a href="index.html"> Home </a> <a href="about-us"> About us </a><a href="how-it-works">How it works</a> <a href="terms-conditions"> Terms and
+Conditions </a> <a href="contact">Contact</a>
+</ul>
+<ul class=" pull-right navbar-link footer-nav">
+<li> &copy; Weyd.com.ng</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<script src="../../../../ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="assets/js/owl.carousel.min.js"></script>
+
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+
+<script src="assets/js/hideMaxListItem.js"></script>
+
+<script src="assets/plugins/jquery.fs.scroller/jquery.fs.scroller.js"></script>
+<script src="assets/plugins/jquery.fs.selecter/jquery.fs.selecter.js"></script>
+
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
