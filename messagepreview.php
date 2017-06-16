@@ -28,17 +28,16 @@ if(!$_SESSION['weyd_user']){
 <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 <link href="assets/css/style.css" rel="stylesheet">
+<link href="bootstrap/css/style.css" rel="stylesheet">
 
 <link href="assets/css/owl.carousel.css" rel="stylesheet">
 <link href="assets/css/owl.theme.css" rel="stylesheet">
 
-<link rel="stylesheet" href="bootstrap/css/font-awesome.css">
 
-<link rel="stylesheet" href="bootstrap/css/style.css">
-<link rel="stylesheet" href="bootstrap/css/font-awesome.css">
-
-  <!-- Latest compiled JavaScript -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 
 <script>
         paceOptions = {
@@ -51,37 +50,52 @@ if(!$_SESSION['weyd_user']){
 <div id="wrapper">
 <?php include("defines/account-header.php");?>
 <div class="main-container">
-  <div class="container-fluid">
-  <div class="scrolla">
-  <div class="green-header">
-    <div style="float: right; text-align: right">
-    <p><b>Product Name: </b>Dummy one</p
-    <p><b>Product code: </b>WDGH-TVGG</p>
-    <a href="#"><i class="btn btn-warning fa fa-ban"> Report</i></a>
-    <a href="#"><i class="btn btn-danger fa fa-trash"> Delete</i></a>
-  </div>
-  <p><b>Buyer's Email Address:</b> user@example.com</p>
-  <p><b>Buyer's Name:</b> User Example</p>
-  <p><b>Buyer's Phone number:</b> 0800002000</p>
-  </div>
-  <div style="padding: 10px">
-    <p>Hello there, I would like to know if your product is negotiable even though you added a fixed price, i don't have up to that.</p>
-  </div>
+<div class="container">
+<div class="row">
+  <?php
+include("defines/account-sidebar.php");
 
-  <div class="form-bottom">
-    <form>
-      <div class="form-group">
-    <textarea class="form-control" placeholder="Type a message to reply user" rows="4" required style="resize: none"></textarea>
-    <button type="submit" style="margin-top: 5px;" class="btn btn-block btn-success"><span class="fa fa-paper-plane"> Send Message</span></button>
-  </div>
-  </form>
-  </div>
+   ?>
+
+<div class="col-sm-9 page-content">
+<div class="inner-box">
+<h2 class="title-2"><i class="icon-docs"></i> My Ads </h2>
+<div class="container-fluid">
+<div class="scrolla">
+<div class="green-header">
+  <div style="float: right; text-align: right">
+  <p><b>Product Name: </b>Dummy one</p
+  <p><b>Product code: </b>WDGH-TVGG</p>
+  <a href="#"><i class="btn btn-warning fa fa-ban"> Report</i></a>
+  <a href="#"><i class="btn btn-danger fa fa-trash"> Delete</i></a>
+</div>
+<p><b>Buyer's Email Address:</b> user@example.com</p>
+<p><b>Buyer's Name:</b> User Example</p>
+<p><b>Buyer's Phone number:</b> 0800002000</p>
+</div>
+<div style="padding: 10px">
+  <p>Hello there, I would like to know if your product is negotiable even though you added a fixed price, i don't have up to that.</p>
+  <p>Hello there, I would like to know if your product is negotiable even though you added a fixed price, i don't have up to that.</p>
+</div>
+
+<div class="form-bottom">
+  <form>
+    <div class="form-group">
+  <textarea class="form-control" placeholder="Type a message to reply user" rows="4" required style="resize: none"></textarea>
+  <button type="submit" style="margin-top: 5px;" class="btn btn-block btn-success"><span class="fa fa-paper-plane"> Send Message</span></button>
+</div>
+</form>
+</div>
 
 
 
-  </div>
-  </div>
+</div>
+</div>
 
+</div>
+</div>
+
+</div>
 
 </div>
 
