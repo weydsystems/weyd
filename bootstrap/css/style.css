@@ -7,10 +7,7 @@ a {
 	padding: 0;
 	box-sizing: border-box;
 }
-html,body {
-	height: 100vh;
-	min-height: 100vh;
-}
+
 
 body {
 	font-color:rgb(236, 240, 241);
@@ -21,30 +18,27 @@ body {
 }
 
 .container-fluid{
-	height: 100%;
+	height: inherit;
 	margin: 0;
 	padding: 0;
 }
 .scrolla {
 	background-color: #fff;
-	height: 100%;
+	height: inherit;
 	overflow: auto;
-	border: 4px solid #eee;
 }
 
 .green-header {
-	background-color: #16a085;
+	background-color: #16a085 !important;
 	color: #fff;
 	padding: 15px;
 }
 
 .form-bottom {
-	position: absolute;
 	bottom: 0;
-	left: 0;
-	right: 0;
+	clear: both;
 	margin-right: auto;
 	margin-left: auto;
-	max-width: 96%;
+	max-width: 100%;
 	margin-bottom: 20px;
 }
