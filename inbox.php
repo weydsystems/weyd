@@ -58,7 +58,7 @@ include("defines/account-sidebar.php");
 
 <div class="col-sm-9 page-content">
 <div class="inner-box">
-<h2 class="title-2"><i class="icon-docs"></i> My Ads </h2>
+<h2 class="title-2"><i class="icon-folder-close"></i> My Inbox </h2>
 <div class="container-fluid">
 <div class="scrolla">
 <table class="table table-hover">
@@ -66,20 +66,24 @@ include("defines/account-sidebar.php");
     <tr>
       <th>Product Name</th>
       <th>Buyer's messaage</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="clickable-row" data-href="messagepreview.php">
-      <td>Dummy one</td>
-      <td><strong>You have a new message from (buyer's name here)</strong> <a href="#"><i style="color: red; float: right" class="fa fa-trash"> Delete</i></a></td>
+    <tr>
+      <td class="clickable-row" data-href="messagepreview.php">Dummy one</td>
+      <td class="clickable-row" data-href="messagepreview.php"><strong>You have a new message from (buyer's name here)</strong></td>
+      <td><a href="#"><span class="fa fa-send-o"> Track form</span></a><a href="#"> <span class="fa fa-trash"></span></a></td>
     </tr>
-    <tr class="clickable-row" data-href="messagepreview.php">
-      <td>Dummy one</td>
-      <td><strong>You have a new message from (buyer's name here)</strong> <a href="#"><i style="color: red; float: right" class="fa fa-trash"> Delete</i></a></td>
+    <tr>
+      <td class="clickable-row" data-href="messagepreview.php">Dummy one</td>
+      <td class="clickable-row" data-href="messagepreview.php"><strong>You have a new message from (buyer's name here)</strong></td>
+      <td><a href="#"><span class="fa fa-send-o"> Track form</span></a><a href="#"> <span class="fa fa-trash"></span></a></td>
     </tr>
-    <tr class="clickable-row" data-href="messagepreview.php">
-      <td>Dummy one</td>
-      <td><strong>You have a new message from (buyer's name here)</strong> <a href="#"><i style="color: red; float: right" class="fa fa-trash"> Delete</i></a></td>
+    <tr>
+      <td class="clickable-row" data-href="messagepreview.php">Dummy one</td>
+      <td class="clickable-row" data-href="messagepreview.php"><strong>You have a new message from (buyer's name here)</strong></td>
+      <td><a href="#"><span class="fa fa-send-o"> Track form</span></a><a href="#"> <span class="fa fa-trash"></span></a></td>
     </tr>
   </tbody>
 </table>
