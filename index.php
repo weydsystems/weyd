@@ -80,7 +80,7 @@ Sales</h2>
 
 <!-- top listing category ends here -->
 <div style="clear: both"></div>
-<!-- <div class="col-lg-12 content-box ">
+<div class="col-lg-12 content-box ">
 <div class="row row-featured">
 <div class="col-lg-12  box-title ">
 <div class="inner"><h2><span>Trending  </span>
@@ -103,7 +103,7 @@ Phones </h2>
 </div>
 </div>
 </div>
-</div> -->
+</div>
 
 <div class="row">
 <div class="col-sm-9 page-content col-thin-right">
@@ -181,7 +181,7 @@ Jobs <span class="count">6375</span></a>
 </div>
 </div>
 
-<div class="page-info hasOverly" style="background: url(images/wm.jpg); background-size:cover">
+<!-- <div class="page-info hasOverly" style="background: url(images/wm.jpg); background-size:cover">
 <div class="bg-overly">
 <div class="container text-center section-promo">
 <div class="row">
@@ -223,9 +223,17 @@ Jobs <span class="count">6375</span></a>
 </div>
 <div class="iconbox-wrap-content">
 <h5><span>700</span></h5>
-<div class="iconbox-wrap-text">Location</div>
+<div class="iconbox-wrap-text">Location
+  <?php
+    $stmt = $mysqli->query("select totalvisit from totalview where page='yourpage' ");
+  ?>
+
+  <p>This page is viewed <?php echo mysqli_num_rows(($stmt));?> times.</p>
+
 </div>
 </div>
+</div>
+
 
 </div>
 
@@ -248,9 +256,9 @@ Jobs <span class="count">6375</span></a>
 </div>
 </div>
 </div>
-</div>
+</div> -->
 <!-- information container -->
-<div class="page-bottom-info">
+<!-- <div class="page-bottom-info">
 <div class="page-bottom-info-inner">
 <div class="page-bottom-info-content text-center">
   <h1>Do you have questions, comments or concerns? if yes then</h1>
@@ -259,7 +267,7 @@ Jobs <span class="count">6375</span></a>
 
 </div>
 </div>
-</div>
+</div> -->
 
 <!--- container ends here -->
 <?php include("footer.php");?>
